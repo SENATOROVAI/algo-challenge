@@ -13,7 +13,7 @@
 https://github.com/SENATOROVAI/algo-challenge/blob/main/var1_task_1.1.py
 
 Требования к реализации:
-Python >3.11
-Статическая типизация
-PEP8
+### Python >3.11
+### Статическая типизация
+### PEP8
 
