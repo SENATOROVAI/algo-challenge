@@ -1,7 +1,7 @@
 # После скачивания репы, в терминале выполнить:
-pip install pre-commit
-pre-commit install
-pre-commit run --all-files
+### pip install pre-commit
+### pre-commit install
+### pre-commit run --all-files
 
 # Суть челленджа (Рефакторинг):
 Постараться улучшить код другого участника, написать эталонный алгоритм. Показать асимптотику.
