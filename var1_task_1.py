@@ -20,11 +20,11 @@ def reverse_digits(number: int) -> int:
             None. Функция выводит результат в виде побочного эффекта.
     """
     # базовый случай
-    if number < 10:
+    if number < 10: 
         print(number)
     else:
         # находим последнюю цифру
-        last_digits = number % 10
+        last_digits:int = number % 10
         # вывожу последнюю цифру
         print(last_digits, end=" ")
         # рекурсивно вызываем функцию, переходим к следующей цифре
@@ -42,16 +42,16 @@ print(reverse_digits(number=num))
 
 
 # Влад
-# def reverse_digits(number):
+# def reverse_digits(number: int)-> int:
 #     """print digits in reverse order"""
 
 #     if number < 10:
 #         print(number)
 #     else:
-#         last_digit = number % 10
+#         last_digit: int = number % 10
 #         print(last_digit, end=" ")
 #         number //= 10
-#         reverse_digits(number)
+#         return reverse_digits(number)
 
 
 # input_data = int(input())
