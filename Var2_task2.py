@@ -16,16 +16,16 @@ print(count)
 
 #аналог через комбинаторику
 
-from itertools import permutations
+# from itertools import permutations
 
-perms = permutations(range(10), 6)
+# perms = permutations(range(10), 6)
 
-unique_perms = filter(lambda x: len(set(x)) == 6, perms)
+# unique_perms = filter(lambda x: len(set(x)) == 6, perms)
 
-count = 0
-for perm in unique_perms:
-    num = int(''.join(map(str, perm)))
-    print(num)
-    count += 1
+# count = 0
+# for perm in unique_perms:
+#     num = int(''.join(map(str, perm)))
+#     print(num)
+#     count += 1
 
-print(count)
+# print(count)
