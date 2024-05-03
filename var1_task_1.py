@@ -8,21 +8,54 @@
 """
 
 
-# Влад
-def reverse_digits(number):
-    """print digits in reverse order"""
+# Кирилл
+def reverse_digits(number: int) -> int:
+    """
+    Рекурсивная функция, реверсивно выводящая цифры числа n.
 
+    Args:
+        n: Неотрицательное целое число.
+
+    Returns:
+            None. Функция выводит результат в виде побочного эффекта.
+    """
+    # базовый случай
     if number < 10:
         print(number)
     else:
-        last_digit = number % 10
-        print(last_digit, end=" ")
-        number //= 10
-        reverse_digits(number)
+        # находим последнюю цифру
+        last_digits = number % 10
+        # вывожу последнюю цифру
+        print(last_digits, end=" ")
+        # рекурсивно вызываем функцию, переходим к следующей цифре
+    return reverse_digits(number // 10)
 
 
-input_data = int(input())
-reverse_digits(input_data)
+# эскейп последовательности \n перенос каретки на новую строку
+# принимаем число
+num: int = int(input("write:>"))
+# вызов функции
+# передача ключевых аргументов (ключ=значение)ключ
+# берем из параметра функциии , а значение откуда берем
+print(reverse_digits(number=num))
+# .\Кирилл
+
+
+# Влад
+# def reverse_digits(number):
+#     """print digits in reverse order"""
+
+#     if number < 10:
+#         print(number)
+#     else:
+#         last_digit = number % 10
+#         print(last_digit, end=" ")
+#         number //= 10
+#         reverse_digits(number)
+
+
+# input_data = int(input())
+# reverse_digits(input_data)
 # .\Влад
 
 # SENATOROV
