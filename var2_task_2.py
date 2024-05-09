@@ -3,8 +3,6 @@
 которых нет повторяющихся цифр, и вывести
 их количество. Ограничений по использованию циклов и массивов нет.
 """
-
-
 # Tatiana
 def print_unique_six_digit_numbers():
     """Count total amount og numbers that
